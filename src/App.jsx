@@ -1,18 +1,14 @@
-import { useState } from 'react'
+
 
 import './App.css'
-
+import ContactList from './components/ContactList'
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-      <h1>FSA Contact List Project</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      {/* <h1>FSA Contact List Project</h1> */}
+      <ContactList />
       <p className="read-the-docs">
        Project Collaboration: Marsha King & Glen Factor
       </p>
