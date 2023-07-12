@@ -1,7 +1,5 @@
-import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ContactRow from './ContactRow';
-
 
 export default function ContactList() {
     const dummyContacts = [
@@ -12,7 +10,27 @@ export default function ContactList() {
 
 const [contacts, setContacts] = useState(dummyContacts)
 
+/* const resetContacts = () => {
+    setContacts([])
+}; */
+
+useEffect(() => {
+    async function fetchContacts() {
+        try {
+            const response = await fetch('https://fsa-jsonplaceholder-69b5c48f1259.herokuapp.com/users');
+            const data = await response.json();
+            console.log('API Response:', data); 
+            setContacts(data)
+            } catch (error) {
+            console.log(error);
+            }
+        }
+        fetchContacts();
+        }, []);
+
 console.log("Contacts: ", contacts)
+
+/* resetContacts(); // Calls the resetContacts function */
      
 return (
     <div>
