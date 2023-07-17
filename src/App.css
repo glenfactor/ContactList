@@ -11,6 +11,7 @@ thead,
 tfoot {
     background-color: #EF1717;
     color: #fff;
+    font-size: larger;
 }
 
 tbody {
@@ -43,3 +44,80 @@ td {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+
+/* SelectedContact.css */
+.selected-contact-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .selected-contact-container h2 {
+    margin-bottom: 10px;
+  }
+  
+  .selected-contact-container p {
+    margin: 5px 0;
+  }
+  
+  .selected-contact-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  
+  /* styles.css */
+
+.selected-contact {
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.contact-heading {
+    font-weight: bold;
+  }
+  
+  .label {
+    font-weight: normal;
+  }
+  
+  /* Apply normal font-weight to all paragraphs except for the label paragraph */
+  p:not(.label) {
+    font-weight: bold;
+  }
+
+    /* styles.css */
+
+.selected-contact table {
+    width: 100%;
+    border-collapse: collapse;
+    color: black;
+  }
+  
+  .selected-contact th {
+    padding: 8px;
+    text-align: center;
+  }
+
+  .selected-contact td {
+    padding: 8px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  
+  .selected-contact th {
+    font-weight: bold;
+  }
+  
+  .label {
+    font-weight: normal;
+  }
+  
