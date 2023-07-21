@@ -1,6 +1,8 @@
+import { useState } from "react"
+import ContactList from "./contactlist"
 
-export default function SelectedContact(setSelectedContactId) {
-  
+export default function SelectedContact() {
+   const [selectedContactId, setSelectedContactId]=useState(ContactList)
   return (
  <tr>
   <td>
