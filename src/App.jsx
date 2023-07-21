@@ -1,6 +1,7 @@
 import "./App.css";
 import React from 'react';
 import ContactList from './components/ContactList';
+import { useState } from "react";
 import SelectedContact from "./components/SelectedContact";
 
 
@@ -12,7 +13,7 @@ export default function App() {
       {selectedContactId ? (
         <div>Selected Contact View</div>
       ) : (
-        <div id ="ContactList">
+        <div id ="Selected Contact">
         <ContactList contact="name" />
         <ContactList contact="email"/>
         <ContactList contact ="phone"/>

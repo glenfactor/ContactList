@@ -1,4 +1,4 @@
-export default function SelectedContact({ contact }) {
+export default function selectedContactId({ contact }) {
     return (
       <tr>
         <td>{contact.name}</td>
@@ -7,7 +7,3 @@ export default function SelectedContact({ contact }) {
       </tr>
     );
   }
-
-  {contacts.map((contact) => {
-    return <SelectedContact key={contact.id} contact={contact} />;
-  })}
