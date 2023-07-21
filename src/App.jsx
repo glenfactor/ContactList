@@ -1,31 +1,24 @@
-import "./App.css";
-import React from 'react';
-import ContactList from './components/ContactList';
-import { useState } from "react";
-import SelectedContact from "./components/SelectedContact";
 
+import "./App.css";
+import { useState } from "react";
+import ContactList from "./components/ContactList";
+import SelectedContact from "./components/SelectedContact";
 
 export default function App() {
   const [selectedContactId, setSelectedContactId] = useState(null);
-
+  console.log(selectedContactId);
   return (
     <>
       {selectedContactId ? (
         <div>Selected Contact View</div>
       ) : (
-        <div id ="Selected Contact">
-        <ContactList contact="name" />
-        <ContactList contact="email"/>
-        <ContactList contact ="phone"/>
-        </div>
+        <ContactList/>
+        
       )}
-      
     </>
   );
 }
 
+// create a second component file  as SelectContact
 
-
-// create a second component folder with files contact list and contact row
-//Create two component codes for contact list and contact row
 

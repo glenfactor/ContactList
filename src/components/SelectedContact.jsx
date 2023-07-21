@@ -1,9 +1,13 @@
-export default function selectedContactId({ contact }) {
-    return (
-      <tr>
-        <td>{contact.name}</td>
-        <td>{contact.email}</td>
-        <td>{contact.phone}</td>
-      </tr>
-    );
-  }
+
+export default function SelectedContact(setSelectedContactId) {
+  
+  return (
+ <tr>
+  <td>
+    {contact.name}
+    {contact.email}
+    {contact.phone}
+  </td>
+ </tr>
+  )
+};
